@@ -1,0 +1,42 @@
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  min-width: 150px;
+  max-width: 200px;
+  min-height: 50px;
+
+  & p {
+    margin: 0
+  }
+  
+  &[data-type="success"] {
+    background-color: #059669;
+  }
+  
+  &[data-type="error"] {
+    background-color: #dc2626;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__body {
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding-top: 8px;
+  }
+}

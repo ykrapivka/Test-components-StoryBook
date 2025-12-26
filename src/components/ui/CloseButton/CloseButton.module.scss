@@ -1,0 +1,13 @@
+.iconClose {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &[data-type="toast"] {
+    color: #ffffff;
+  }
+
+  &[data-type="input"] {
+    color: red;
+  }
+}
